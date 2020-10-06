@@ -71,7 +71,7 @@ localStorage["highScore"]=0;
 
   
   trex.setCollider("rectangle",0,0,trex.width,trex.height);
-  trex.debug = true
+  trex.debug = false;
   
   score = 0;
   
@@ -90,7 +90,7 @@ function draw() {
     restart.visible = false;
     
     ground.velocityX = -(4 + 3* score/100)
-    //scoring
+    //scoring 
     score = score + Math.round(getFrameRate()/60);
     
     if(score>0 && score%100 === 0){
