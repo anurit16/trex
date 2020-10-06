@@ -71,7 +71,7 @@ localStorage["highScore"]=0;
 
   
   trex.setCollider("rectangle",0,0,trex.width,trex.height);
-  trex.debug = false;
+  trex.debug = false
   
   score = 0;
   
